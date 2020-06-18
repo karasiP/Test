@@ -1,5 +1,6 @@
 ***Settings***
 Library  SeleniumLibrary
+Test Teardown   Close Browser
 
 ***Variables***
 ${URL}   https://google.com/
@@ -9,7 +10,7 @@ ${word_value}   สวัสดี - วิกิพีเดีย
 ${name_Input}   name=q
 ${name_Button}  name=btnK
 ${locator_value}  xpath=//*[@id="rso"]/div[1]/div/div[1]/a/h3
-
+${setTime}  timeout=10
 ***Keywords***
 เปิดหน้าBrowser Google   
     open Browser  ${URL}   ${BROWSER}
@@ -27,6 +28,5 @@ openGoogle
     ค้นหาคำว่าสวัสดี
     กดปุ่มค้นหา
     รอผลลัพธ์การค้นหา
-    Close Browser 
 
 

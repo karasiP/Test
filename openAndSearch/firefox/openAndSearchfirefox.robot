@@ -1,5 +1,6 @@
 ***Settings***
 Library     SeleniumLibrary
+Test Teardown   Close Browser
 
 ***Variables***
 ${URL}      https://google.com/
@@ -23,4 +24,3 @@ openfirefox
     เปิดBrowserFireFox
     ค้นหาคำว่าสวัสดี
     รอผลลัพธ์การค้นหา
-    Close Browser
