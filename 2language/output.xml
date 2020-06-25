@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20200624 17:14:38.683" rpa="false">
+<suite id="s1" name="Language" source="D:\Test\2language\language.robot">
+<test id="s1-t1" name="Search2Languge">
+<kw name="Open Page Browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200624 17:14:38.991" level="INFO">Opening browser 'ff' to base url 'http://google.com/'.</msg>
+<status status="PASS" starttime="20200624 17:14:38.990" endtime="20200624 17:14:45.956"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200624 17:14:45.956" endtime="20200624 17:14:45.956"></status>
+</kw>
+<status status="PASS" starttime="20200624 17:14:38.990" endtime="20200624 17:14:45.956"></status>
+</kw>
+<kw name="InputKeywordSearch">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_Text}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200624 17:14:45.970" level="INFO">Typing text 'Into The Unknown' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20200624 17:14:45.970" endtime="20200624 17:14:46.121"></status>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20200624 17:14:46.121" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20200624 17:14:46.121" endtime="20200624 17:14:46.168"></status>
+</kw>
+<status status="PASS" starttime="20200624 17:14:45.970" endtime="20200624 17:14:46.168"></status>
+</kw>
+<kw name="Verify Page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${word_verify}</arg>
+</arguments>
+<status status="PASS" starttime="20200624 17:14:46.171" endtime="20200624 17:14:46.835"></status>
+</kw>
+<status status="PASS" starttime="20200624 17:14:46.171" endtime="20200624 17:14:46.835"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200624 17:14:46.836" endtime="20200624 17:14:47.772"></status>
+</kw>
+<status status="PASS" starttime="20200624 17:14:38.989" endtime="20200624 17:14:47.773" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200624 17:14:38.685" endtime="20200624 17:14:47.778"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Language">Language</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
