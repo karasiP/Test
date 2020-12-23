@@ -2,13 +2,15 @@
 Library    SeleniumLibrary
 
 ***Variables***
-${URL}    https://robotframework.org/
+${URL}    http://google.com/
 ${Browser}    gc
+${port}    http://localhost:4444/wd/hub
+
 ***Keywords***
 
 ***Test Cases***
-Open Robot Framework
-    Open Browser    ${URL}    ${Browser}
+open google gc2
+    Open Browser    ${URL}    ${Browser}    ${port}    
     Maximize Browser Window
-    Capture Page Screenshot
+    # Capture Page Screenshot
     Close Browser

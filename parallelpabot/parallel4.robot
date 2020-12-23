@@ -2,14 +2,15 @@
 Library    SeleniumLibrary
 
 ***Variables***
-${URL}    https://robotframework.org/
-${Browser}    gc
-${word_verify}    ROBOT FRAME WORK/
+${URL}    http://google.com/
+${Browser}    ff
+${port}    http://localhost:4444/wd/hub
 ***Keywords***
 
 ***Test Cases***
-Verify Robot Framework
-    Open Browser    ${URL}    ${Browser}
-    Wait Until Page Contains    ${word_verify}
-    Capture Page Screenshot
+open google ff
+    Open Browser    ${URL}    ${Browser}    ${port}  
+    maximize Browser Window
+    # Wait Until Page Contains    ${word_verify}
+    # Capture Page Screenshot
     Close Browser

@@ -12,3 +12,4 @@ Open google
     maximize Browser Window
     Capture Page Screenshot
     Close Browser
+    

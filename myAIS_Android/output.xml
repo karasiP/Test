@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20200708 10:25:57.394" rpa="false">
+<suite id="s1" name="Ais Android" source="D:\Test\myAIS_Android\ais_android.robot">
+<test id="s1-t1" name="Login MyAIS Application">
+<kw name="Launch Application">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>platformVersion=${platformVersion}</arg>
+<arg>appActivity=${appActivity}</arg>
+<arg>appPackage=${appPackage}</arg>
+<arg>noReset=${noReset}</arg>
+</arguments>
+<status status="PASS" starttime="20200708 10:25:57.751" endtime="20200708 10:26:18.423"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:25:57.751" endtime="20200708 10:26:18.423"></status>
+</kw>
+<kw name="Login Application">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20200708 10:26:38.425" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" starttime="20200708 10:26:18.424" endtime="20200708 10:26:38.425"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${input_box}</arg>
+<arg>${tel}</arg>
+</arguments>
+<msg timestamp="20200708 10:26:38.426" level="INFO">Typing text '0847323566' into text field 'id=com.ais.mimo.eservice:id/my_ais_login_welcome_et_account'</msg>
+<status status="PASS" starttime="20200708 10:26:38.425" endtime="20200708 10:26:39.647"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${btnตกลง}</arg>
+</arguments>
+<msg timestamp="20200708 10:26:39.649" level="INFO">Clicking element 'id=com.ais.mimo.eservice:id/my_ais_login_welcome_btn_ok'.</msg>
+<status status="PASS" starttime="20200708 10:26:39.647" endtime="20200708 10:26:40.303"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${input_OTP}</arg>
+</arguments>
+<msg timestamp="20200708 10:26:45.846" level="INFO">&lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
+&lt;hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="2060"&gt;
+  &lt;android.widget.FrameLayout index="0" package="com.ais.mimo.eservice" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[317,1060][763,1180]" displayed="true"&gt;
+    &lt;android.widget.FrameLayout index="0" package="com.ais.mimo.eservice" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[317,1060][763,1180]" displayed="true"&gt;
+      &lt;android.widget.FrameLayout index="0" package="com.ais.mimo.eservice" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[317,1060][763,1180]" displayed="true"&gt;
+        &lt;android.widget.LinearLayout index="0" package="com.ais.mimo.eservice" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[317,1060][763,1180]" displayed="true"&gt;
+          &lt;android.widget.ProgressBar index="0" package="com.ais.mimo.eservice" class="android.widget.ProgressBar" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[317,1060][437,1180]" displayed="true" /&gt;
+          &lt;android.widget.TextView index="1" package="com.ais.mimo.eservice" class="android.widget.TextView" text="LOADING" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[461,1071][688,1168]" displayed="true" /&gt;
+        &lt;/android.widget.LinearLayout&gt;
+      &lt;/android.widget.FrameLayout&gt;
+    &lt;/android.widget.FrameLayout&gt;
+  &lt;/android.widget.FrameLayout&gt;
+&lt;/hierarchy&gt;</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200708 10:26:47.016" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200708 10:26:45.846" endtime="20200708 10:26:47.016"></status>
+</kw>
+<msg timestamp="20200708 10:26:47.017" level="FAIL">Element 'id=com.ais.mimo.eservice:id/my_ais_login_password_page_et_otp_or_password' did not appear in 5 seconds</msg>
+<status status="FAIL" starttime="20200708 10:26:40.304" endtime="20200708 10:26:47.017"></status>
+</kw>
+<status status="FAIL" starttime="20200708 10:26:18.424" endtime="20200708 10:26:47.017"></status>
+</kw>
+<status status="FAIL" starttime="20200708 10:25:57.750" endtime="20200708 10:26:47.018" critical="yes">Element 'id=com.ais.mimo.eservice:id/my_ais_login_password_page_et_otp_or_password' did not appear in 5 seconds</status>
+</test>
+<status status="FAIL" starttime="20200708 10:25:57.396" endtime="20200708 10:26:47.022"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Ais Android">Ais Android</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
